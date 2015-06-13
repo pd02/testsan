@@ -28,7 +28,7 @@ public class EmployeeController {
 	private EmployeeService employeeService;
 	
 	@RequestMapping(value = "/save", method = RequestMethod.POST)
-	public ModelAndView saveEmployee(@ModelAttribute("command") EmployeeBean employeeBean, 
+	public ModelAndView saveEmployee(@ModelAttribute("commandrrrS") EmployeeBean employeeBean, 
 			BindingResult result) {
 		Employee employee = prepareModel(employeeBean);
 		employeeService.addEmployee(employee);
